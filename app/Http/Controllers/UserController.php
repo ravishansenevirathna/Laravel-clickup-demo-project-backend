@@ -19,4 +19,15 @@ class UserController extends Controller
         return User::create($request->all());      
        
     }
+
+    
+    public function getalluser()
+    {
+
+        $users = User::all();
+        return $users;      
+       
+    }
+
+
 }

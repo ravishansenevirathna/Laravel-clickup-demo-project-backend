@@ -16,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// user controller
+
 Route::post('/saveuser', [UserController::class, 'saveuser']);
+Route::get('/getalluser', [UserController::class, 'getalluser']);
 
 Route::post('/addtask', [TaskController::class, 'addtask']);
 
